@@ -1,5 +1,6 @@
 # Compiler files
 cache/
+/artifacts/
 out/
 
 # Ignores development broadcast logs
@@ -12,3 +13,17 @@ docs/
 
 # Dotenv file
 .env
+
+# Dependency directories
+/lib/
+/node_modules/
+
+# Foundry specific
+forge-std/
+broadcast/
+*.json
+
+# Test coverage reports
+coverage/
+coverage.json
+lcov.info
