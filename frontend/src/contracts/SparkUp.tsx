@@ -1,7 +1,7 @@
 import { scrollSepolia } from '@reown/appkit/networks';
 
 export const SparkUp = {
-  address: "0x0C68fB6564CD034cC5bD770e536736ffB2f77Ff1" as `0x${string}`,
+  address: "0xCF85AE46F9254D28338E54a10810877Db54b2bAF" as `0x${string}`,
   abi: [
 	{
 		"inputs": [],

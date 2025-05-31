@@ -1,8 +1,8 @@
 import { usePublicClient } from 'wagmi'
-import { mainnet , scrollSepolia } from 'wagmi/chains'
+import { scrollSepolia } from 'wagmi/chains'
 
 export function useSafePublicClient() {
-  const publicClient = usePublicClient({ chainId: scrollSepolia })
+  const publicClient = usePublicClient({ chainId : scrollSepolia.id })
   if (!publicClient) {
     throw new Error('publicClient not available')
   }
