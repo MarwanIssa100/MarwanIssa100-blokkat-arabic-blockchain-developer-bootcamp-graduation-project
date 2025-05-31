@@ -1,21 +1,6 @@
-1:"$Sreact.fragment"
-3:I[894,[],"ClientPageRoot"]
-4:I[2377,["192","static/chunks/192-1299f8299abeddbd.js","974","static/chunks/app/page-980912c60b0a5e9b.js"],"default"]
-7:I[9665,[],"MetadataBoundary"]
-9:I[9665,[],"OutletBoundary"]
-c:I[4911,[],"AsyncMetadataOutlet"]
-e:I[9665,[],"ViewportBoundary"]
-10:I[6614,[],""]
-:HL["/_next/static/css/6e3034c25cd6eee4.css","style"]
-0:{"P":null,"b":"V4eTGA8-_w06Zly1HFCtt","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/6e3034c25cd6eee4.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],"$L2"]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","$L3",null,{"Component":"$4","searchParams":{},"params":{},"promises":["$@5","$@6"]}],["$","$L7",null,{"children":"$L8"}],null,["$","$L9",null,{"children":["$La","$Lb",["$","$Lc",null,{"promise":"$@d"}]]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","xih-QJZi30L7UoV0UwLAQ",{"children":[["$","$Le",null,{"children":"$Lf"}],null]}],null]}],false]],"m":"$undefined","G":["$10","$undefined"],"s":false,"S":true}
-11:"$Sreact.suspense"
-12:I[4911,[],"AsyncMetadata"]
-2:["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__className_e8ce0c"}]}]
-5:{}
-6:{}
-8:["$","$11",null,{"fallback":null,"children":["$","$L12",null,{"promise":"$@13"}]}]
-b:null
-f:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
-a:null
-13:{"metadata":[["$","title","0",{"children":"SparkUp"}],["$","meta","1",{"name":"description","content":"Powered by Reown"}],["$","link","2",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}]],"error":null,"digest":"$undefined"}
-d:{"metadata":"$13:metadata","error":null,"digest":"$undefined"}
+2:I[7831,[],""]
+3:I[7087,["793","static/chunks/793-ade421108ea0fde6.js","931","static/chunks/app/page-ab9f73220e50084a.js"],""]
+0:["Hg_whPOPgoLr0hkAcXw2t",[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",{"children":["__PAGE__",{},["$L1",["$","$L2",null,{"propsForComponent":{"params":{}},"Component":"$3","isStaticGeneration":true}],null]]},[null,"$L4",null]],[[["$","link","0",{"rel":"stylesheet","href":"/MarwanIssa100-blokkat-arabic-blockchain-developer-bootcamp-graduation-project/_next/static/css/728042bba1a2d9f8.css","precedence":"next","crossOrigin":""}]],"$L5"]]]]
+4:["$","html",null,{"lang":"en","children":["$","body",null,{"className":"__className_7f3408"}]}]
+5:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"SparkUp"}],["$","meta","3",{"name":"description","content":"Powered by Reown"}],["$","link","4",{"rel":"icon","href":"/MarwanIssa100-blokkat-arabic-blockchain-developer-bootcamp-graduation-project/favicon.ico","type":"image/x-icon","sizes":"16x16"}]]
+1:null
