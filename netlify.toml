@@ -20,3 +20,6 @@
   for = "/_next/data/*"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate" 
+
+[functions]
+  included_files = ["frontend/**"]
