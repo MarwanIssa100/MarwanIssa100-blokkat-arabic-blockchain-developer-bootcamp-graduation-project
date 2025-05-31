@@ -8,5 +8,8 @@
     "react-dom": "^19.1.0",
     "viem": "^2.30.5",
     "wagmi": "^2.15.4"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.11.2"
   }
 }
