@@ -1,10 +1,10 @@
 'use client';
 import { useAccount, useReadContract, useWriteContract, usePublicClient } from 'wagmi';
-import { SparkUp } from '@/src/contracts/SparkUp';
+import { SparkUp } from '@/app/src/contracts/SparkUp';
 import { formatEther, parseEther } from 'viem';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { useSafePublicClient } from '@/hooks/useSafePublicClient';
+import { useSafePublicClient } from '@/app/hooks/useSafePublicClient';
 
 
 export default function Home() {
