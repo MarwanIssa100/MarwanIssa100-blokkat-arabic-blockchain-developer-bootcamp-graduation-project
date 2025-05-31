@@ -88,7 +88,8 @@ contract SparkUp is Ownable {
         require(i.completed == false, "Idea is already completed");
         require(i.deadline > block.timestamp, "Idea deadline has passed");
         require(msg.value > 0, "Amount must be greater than 0");
-        require(msg.value <= i.fundGoal, "Amount must be less than or equal to the goal");
+        uint256 remaining = i.fundGoal - i.amountCollected;
+        require(msg.value <= remaining, "Amount exceeds remaining funding goal");
         i.amountCollected += msg.value;
         contributions[id][msg.sender] += msg.value;
         emit IdeaFunded(id, msg.sender, msg.value);
@@ -115,6 +116,13 @@ contract SparkUp is Ownable {
         emit withdrawFunds(id , msg.sender,amount);
     }
 
+    ///@notice Completes an idea
+    ///@param id The ID of the idea to complete
+
+    function completeIdea(uint id) public {
+    require(msg.sender == ideas[id].owner, "Only owner can complete");
+    ideas[id].completed = true;
+    }
 
     ///@notice Withdraws fees from an idea
     ///@param id The ID of the idea to withdraw fees from
