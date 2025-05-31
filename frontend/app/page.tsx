@@ -4,6 +4,8 @@ import { SparkUp } from '@/src/contracts/SparkUp';
 import { formatEther, parseEther } from 'viem';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import { useSafePublicClient } from '@/hooks/useSafePublicClient';
+
 
 export default function Home() {
   const router = useRouter();
@@ -55,11 +57,10 @@ export default function Home() {
     }
   }, [isCompleteSuccess]);
 
-  const publicClient = usePublicClient() // Get the public client
+  const publicClient = useSafePublicClient()
   const [ideas, setIdeas] = useState<Idea[]>([])
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-
   // Fetch all ideas
   useEffect(() => {
     const fetchIdeas = async () => {
