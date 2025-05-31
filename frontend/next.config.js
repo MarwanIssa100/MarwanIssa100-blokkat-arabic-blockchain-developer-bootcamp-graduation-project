@@ -1,10 +1,5 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: 'export', // Enables static export
   images: {
     unoptimized: true, // Required for static export
@@ -13,4 +8,4 @@ module.exports = {
   assetPrefix: '/MarwanIssa100-blokkat-arabic-blockchain-developer-bootcamp-graduation-project',
 };
 
-export default nextConfig;
+module.exports = nextConfig; 
