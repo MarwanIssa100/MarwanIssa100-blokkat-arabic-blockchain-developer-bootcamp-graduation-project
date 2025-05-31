@@ -1,0 +1,479 @@
+{
+  "compiler": {
+    "version": "0.8.20+commit.a1b79de6"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          }
+        ],
+        "type": "error",
+        "name": "OwnableInvalidOwner"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          }
+        ],
+        "type": "error",
+        "name": "OwnableUnauthorizedAccount"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256",
+            "indexed": false
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address",
+            "indexed": false
+          },
+          {
+            "internalType": "string",
+            "name": "title",
+            "type": "string",
+            "indexed": false
+          },
+          {
+            "internalType": "string",
+            "name": "description",
+            "type": "string",
+            "indexed": false
+          }
+        ],
+        "type": "event",
+        "name": "IdeaCreated",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256",
+            "indexed": false
+          },
+          {
+            "internalType": "address",
+            "name": "funder",
+            "type": "address",
+            "indexed": false
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256",
+            "indexed": false
+          }
+        ],
+        "type": "event",
+        "name": "IdeaFunded",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "previousOwner",
+            "type": "address",
+            "indexed": true
+          },
+          {
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address",
+            "indexed": true
+          }
+        ],
+        "type": "event",
+        "name": "OwnershipTransferred",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256",
+            "indexed": false
+          },
+          {
+            "internalType": "address",
+            "name": "backer",
+            "type": "address",
+            "indexed": false
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256",
+            "indexed": false
+          }
+        ],
+        "type": "event",
+        "name": "refunded",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256",
+            "indexed": false
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address",
+            "indexed": false
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256",
+            "indexed": false
+          }
+        ],
+        "type": "event",
+        "name": "withdrawFunds",
+        "anonymous": false
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "FeePercentage",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "completeIdea"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "contributions",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "string",
+            "name": "_title",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "_description",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_fundGoal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "_deadline",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "createIdea"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_id",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "payable",
+        "type": "function",
+        "name": "fundIdea"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_id",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "getIdea",
+        "outputs": [
+          {
+            "internalType": "string",
+            "name": "title",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "description",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "fundGoal",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "deadline",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amountCollected",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "completed",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "owner",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address",
+            "name": "_backer",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "refund"
+      },
+      {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "renounceOwnership"
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "totalIdeas",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_id",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "withdraw"
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {
+        "completeIdea(uint256)": {
+          "params": {
+            "id": "The ID of the idea to complete"
+          }
+        },
+        "createIdea(string,string,uint256,uint256)": {
+          "details": "Emits an IdeaCreated event",
+          "params": {
+            "deadline": "The deadline for the idea",
+            "description": "A description of the idea",
+            "goal": "The funding goal for the idea",
+            "title": "The title of the idea"
+          }
+        },
+        "fundIdea(uint256)": {
+          "details": "Emits an IdeaFunded event",
+          "params": {
+            "id": "The ID of the idea to fund"
+          }
+        },
+        "getIdea(uint256)": {
+          "params": {
+            "ideaId": "The ID of the idea to retrieve"
+          },
+          "returns": {
+            "_0": "A tuple containing the title, description, owner, funding goal, deadline, amount collected, and completion status"
+          }
+        },
+        "owner()": {
+          "details": "Returns the address of the current owner."
+        },
+        "refund(uint256,address)": {
+          "details": "Emits a refunded event",
+          "params": {
+            "backer": "The address of the backer to refund",
+            "id": "The ID of the idea to refund the backer from"
+          }
+        },
+        "renounceOwnership()": {
+          "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner."
+        },
+        "transferOwnership(address)": {
+          "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+        },
+        "withdraw(uint256)": {
+          "details": "Emits a withdrawFunds event",
+          "params": {
+            "id": "The ID of the idea to withdraw funds from"
+          }
+        },
+        "withdrawFees(uint256)": {
+          "details": "Emits a withdrawFunds event",
+          "params": {
+            "id": "The ID of the idea to withdraw fees from"
+          }
+        }
+      },
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {
+        "completeIdea(uint256)": {
+          "notice": "Completes an idea"
+        },
+        "createIdea(string,string,uint256,uint256)": {
+          "notice": "Creates a new idea for crowdfunding"
+        },
+        "fundIdea(uint256)": {
+          "notice": "Funds an idea for crowdfunding"
+        },
+        "getIdea(uint256)": {
+          "notice": "Returns the details of an idea"
+        },
+        "refund(uint256,address)": {
+          "notice": "Refunds a backer's contribution to an idea"
+        },
+        "withdraw(uint256)": {
+          "notice": "Withdraws funds from an idea"
+        },
+        "withdrawFees(uint256)": {
+          "notice": "Withdraws fees from an idea"
+        }
+      },
+      "version": 1
+    }
+  },
+  "settings": {
+    "remappings": [],
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "compilationTarget": {
+      "SparkUp/src/SparkUp.sol": "SparkUp"
+    },
+    "evmVersion": "shanghai",
+    "libraries": {}
+  },
+  "sources": {
+    "SparkUp/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "keccak256": "0xff6d0bb2e285473e5311d9d3caacb525ae3538a80758c10649a4d61029b017bb",
+      "license": "MIT"
+    },
+    "SparkUp/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "keccak256": "0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2",
+      "license": "MIT"
+    },
+    "SparkUp/src/SparkUp.sol": {
+      "keccak256": "0x95b5d1af1b251ff6e292bd6f23eb0ba63cc446bb54878f2d60b896e545bffe09",
+      "license": "MIT"
+    }
+  },
+  "version": 1
+}
